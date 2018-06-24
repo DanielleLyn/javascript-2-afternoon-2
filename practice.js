@@ -18,11 +18,12 @@ var arr = [10,20,30];
 */
 
 //Code Here
+function first (arr){
+  return arr.shift();
+}
 
 
-
-////////// PROBLEM 2 //////////
-
+///////// PROBLEM 2 //////////
 // Do not edit the code below.
 var arr = [40,50,60];
 // Do not edit the code above.
@@ -33,7 +34,9 @@ var arr = [40,50,60];
 */
 
 //Code Here
-
+function last (arr){
+  return arr.pop();
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -48,7 +51,12 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
-
+function looper (family){
+  for(var i=0;i<family.length;i++){
+    var item = family[i];
+    alert(item)
+  }
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -64,7 +72,12 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
 //Code Here
 
-
+function reversedLooper(letters){
+  for (var i=letters.length-1;i>=0;i--){
+    var item = letters[i];
+    alert(item)
+  }
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -79,7 +92,14 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 //Code Here
 
-
+function evenFinder (nums){
+  for(var i=letters.length-1;i>=0;i--){
+   if (nums[i]%2===1){
+      nums.splice(i,1)
+    }
+  }
+  return nums;
+}
 
 
 
@@ -104,9 +124,20 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   Write a function called divider that is given one argument, numbersArray.
   Have divider return an Array with the first item in the array being the evens array (all the even values from numbersArray) and the second item in the Array being the odds array (all the odd values from numbersArray).
 */
+var evensArray = [];
+var oddsArray = []; 
 
-//Code Here
-
+function divider(numbersArray){
+  for(var i=0;i<numbersArray.length;i++){
+    if(numbersArray[i]%2===0){
+      evensArray.push[i];
+    } else {
+      oddsArray.push[i];
+    }
+    var newArray = [evensArray, oddsArray];
+  }
+  return newArray
+}
 
 
 ////////// PROBLEM 7 //////////
